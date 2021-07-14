@@ -124,7 +124,7 @@ body{
 .match-blog{
     width: 100%;
     height: 428px;
-    margin-top: 165px;
+    margin-top: 120px;
     display: flex;
     align-items: center;
 }
@@ -179,7 +179,7 @@ cofa america history style start
     font-weight: 700;
     font-size: 48px;
     color: #0A0826;
-    margin: 0 0 20px 0;
+    margin: 70px 0 20px 0;
 }
 .historys{
     display: flex;
@@ -297,7 +297,7 @@ a:hover{
  --responsive for android start 
  --------------------------------*/
  @media only screen and (max-width:688px) {
-     /* ---------------------------
+/*--- ---------------------------
 ---header style start------
 --------------------------------- */
 .header{
@@ -313,10 +313,9 @@ a:hover{
     text-align: left;
 }
 .left-side h1{
-    font-weight: 700;
     font-size: 40px;
-    color: #FFFFFF;
-}.right-side .banner img{
+}
+.right-side .banner img{
     width: 329px;
     height: 259.17px;
 }
@@ -432,4 +431,137 @@ a{
  }
  /*---------------------------
  --responsive for android end 
+ --------------------------------*/
+
+
+
+
+ /*---------------------------
+ --responsive for ipad start 
+ --------------------------------*/
+@media only screen and (min-width:689px) and (max-width:991px) {
+    
+    /*--- ---------------------------
+---header style start------
+--------------------------------- */
+    .header{
+        width: 100%;
+        height: 900px;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+    }
+    .left-side{
+        margin-left: 0;
+    }
+    .left-side h1{
+        font-size: 64px;
+    }
+    .right-side .banner img{
+        width: 556.01px;
+        height: 438px;
+        margin-top: 70px;
+    }
+    /*--- ---------------------------
+---header style end------
+--------------------------------- */
+
+
+
+/* ----------------------------
+ ----blogs section style start
+ --------------------------- */
+ .container{
+    width: 100%;
+    margin-top: 45px;
+}
+.blogs{
+   grid-template-columns: repeat(2,1fr);
+   grid-column-gap: 30px;
+   grid-row-gap: 24px;
+}
+ /* ----------------------------
+ ----blogs section style end
+ --------------------------- */
+
+
+
+ /* ---------------------------
+ ------match-blog style start 
+ -------------------------------*/
+ .match-blog{
+    display: 100%;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+.left-blog{
+   margin-left: 40px;
+   margin-top: 0;
+   height: 20px;
+}
+.left-blog h1{
+   font-size: 48px;
+}
+.right-blog{
+    margin: 0;
+}
+.right-blog img{
+    width: 567px;
+    height: 427px;;
+    margin:  95px 156px 158px 40px;
+}
+
+/* ---------------------------
+------match-blog style end 
+-------------------------------*/
+
+
+/*------------------------------
+  cofa america history style start 
+  --------------------------------*/
+  .history-header{
+    font-size: 48px;
+    margin: 350px 0 20px 0;
+}
+.historys{
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+ /*------------------------------
+  cofa america history style end 
+  --------------------------------*/
+
+
+
+
+ /* -----------------------------
+ update and submit style start
+ --------------------------------- */
+ #container2{
+     width: 100%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin:70px 0 100px 0 ;
+ }
+#update{
+    margin:0 100px 10px 0;
+}
+
+input{
+    padding: 10px 24px;
+}
+input::placeholder{
+    font-size: 19px;
+}
+a{
+    padding: 10px 24px;
+    font-size: 16px;
+}
+/*--------------------------
+ update and submit style end 
+ ----------------------------*/
+
+}
+ /*---------------------------
+ --responsive for ipad end 
  --------------------------------*/
