@@ -172,6 +172,7 @@ body{
   --------------------------------*/
 
 
+
 /* ------------------------------
 cofa america history style start 
 -------------------------------------*/
@@ -522,6 +523,9 @@ a{
   .history-header{
     font-size: 48px;
     margin: 350px 0 20px 0;
+}
+#history-name{
+    margin-top: 0;
 }
 .historys{
     flex-direction: column;
