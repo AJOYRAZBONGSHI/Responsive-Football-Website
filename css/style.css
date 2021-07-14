@@ -50,7 +50,7 @@ body{
     font-size: 16px;
     color: #FFFFFF;
     background-color: #E02C6D;
-    transition: all 1s ease;
+    transition: all 1s ease-in-out;
 }
 .left-side a:hover{
     border: 2px solid #FFFFFF;
@@ -63,13 +63,14 @@ body{
     width: 556px;
     height: 438px;
 }
-.banner img:hover{
-    transform: scale(1.2) rotate(-45deg);
-    transition: transform 1.5s ease;
+.banner:hover {
+    transform: scale(0.8) rotate(-360deg);
+    transition: transform 2s ease;
 }
 /* ---------------------------
 ---header style end------
 --------------------------------- */
+
 
  /* ----------------------------
  blogs section style start
@@ -115,7 +116,11 @@ body{
  /* ----------------------------
  blogs section style end
  --------------------------- */
- /* match-blog style start */
+
+
+ /*------------------------------
+ ------ match-blog style start 
+  ----------------------------------*/
 .match-blog{
     width: 100%;
     height: 428px;
@@ -125,6 +130,7 @@ body{
 }
 .left-blog{
     margin: 224px 10px 217px 182px;
+    text-align: left;
 }
 .left-blog h1{
     font-weight: 700;
@@ -153,6 +159,7 @@ body{
 .left-blog a:hover{
     border: 2px solid #FFFFFF;
     background-color: #2D25A0;
+    transition: all 1s ease;
 }
 .right-blog img{
     width: 567px;
@@ -160,13 +167,93 @@ body{
     margin:  165px 156px 158px 66px;
 }
 
- /* match-blog style end */
- /* footer style start */
+ /*--------------------------------
+  -----match-blog style end ----
+  --------------------------------*/
+
+
+/* ------------------------------
+cofa america history style start 
+-------------------------------------*/
+.history-header{
+    font-weight: 700;
+    font-size: 48px;
+    color: #0A0826;
+    margin: 0 0 20px 0;
+}
+.historys{
+    display: flex;
+    flex-direction: row;
+}
+.history{
+    margin: 0 15px;
+}
+/* #container1{
+    margin: 50px 192px 0 192px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 50px;
+} */
+/* ------------------------------
+cofa america history style end 
+-----------------------------------*/
+
+ /* -----------------------------
+ update and submit style start
+ --------------------------------- */
+ #container2{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin:150px 300px 0 300px ;
+    padding: 50px;
+ }
+#update{
+    font-size: 24px;
+    margin:0 0 10px 0;
+    text-align: center;
+    color: #E02C6D;
+}
+div{
+    text-align: center;
+}
+input{
+    border-radius: 15px;
+    border: 2px solid #E02C6D;
+    padding: 10px 24px;
+    margin-right: 5px;
+    color: #E02C6D;
+    text-align: center;
+}
+input::placeholder{
+    color: #E02C6D;
+    font-size: 19px;
+}
+input:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    padding: 10px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+}
+a:hover{
+    border: 2px solid #FFFFFF;
+    background-color: #2D25A0;
+    transition: all 1s ease;
+}
+/*--------------------------
+ update and submit style end 
+ ----------------------------*/
+
+ /* ------------------------
+ -------footer style start---- 
+ ----------------------------*/
  footer{
      display: flex;
      flex-direction: column;
      align-items: center;
-     margin: 160px 0 60px 0;
+     margin: 60px 0 60px 0;
  }
  footer-sec{
     width: 483.87px;
@@ -177,14 +264,16 @@ body{
 .logo img{
     width: 480px;
     height: 110px;
+    margin-bottom: 30px;
 }
 .icons i{
  width: 32px;
  height: 32px;
- color: #969BAB;
+ color: #696d77;
 }
 .icons{
     margin: 0;
+    text-align: center;
 }
 .icons span{
     background-color: #dadbdf;
@@ -192,12 +281,155 @@ body{
     padding: 10px;
     margin: 0 5px;
 }
-.icons, .copyright{
-    text-align: center;
-}
 .footer-sec .copyright{
     font-size: 18px;
     color: #000000;
-    margin-top: 5px;
+    margin-top: 25px;
+    text-align: center;
 }
  /* footer style end */
+
+ /*----------------------------
+ ------ responsive styles------
+ ------------------------------ */
+
+ /*---------------------------
+ --responsive for android start 
+ --------------------------------*/
+ @media only screen and (max-width:688px) {
+     /* ---------------------------
+---header style start------
+--------------------------------- */
+.header{
+    width: 100%;
+    /* width: 360px; */
+    height: 695px;
+    grid-template-columns: repeat(1,1fr);
+    align-items: left;
+    margin-bottom: 10px;
+}
+.left-side{
+    margin-left: 16px;
+    text-align: left;
+}
+.left-side h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+}.right-side .banner img{
+    width: 329px;
+    height: 259.17px;
+}
+.left-side a{
+    text-align: left;
+}
+/* ---------------------------
+---header style end------
+--------------------------------- */
+
+
+/* ----------------------------
+ ----blogs section style start
+ --------------------------- */
+ .container{
+     width: 100%;
+     margin-top: 45px;
+}
+.blogs{
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 24px;
+ }
+ /* ----------------------------
+ ------blogs section style end
+ --------------------------- */
+
+
+ /* ---------------------------
+ ------match-blog style start 
+ -------------------------------*/
+ .match-blog{
+     display: 100%;
+     flex-direction: column;
+     margin-top: 60px;
+     
+ }
+ .left-blog{
+    margin-top: 60px;
+    margin-left: 15px;
+    text-align: left;
+    margin-top: 0;
+    height: 120px;
+}
+.left-blog h1{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 8px 0;
+}
+.right-blog img{
+    width: 328px;
+    height: 248px;
+    margin: 0;
+}
+ /* ---------------------------
+ ------match-blog style end 
+ -------------------------------*/
+
+
+ /*------------------------------
+  cofa america history style start 
+  --------------------------------*/
+.history-header{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 150px 0 20px 0;
+}
+.historys{
+    flex-direction: column;
+}
+.history{
+    margin: 0 15px;
+}
+
+ /*------------------------------
+  cofa america history style end 
+  --------------------------------*/
+
+
+  /*-------------------------------
+  --update and submit style start 
+  ---------------------------------*/
+ #container2{
+    margin:30px 0 0 0 ;
+    padding: 10px 0;
+ }
+input{
+    padding: 6px 12px;
+    margin-right: 3px;
+}
+input::placeholder{
+    font-size: 15px;
+}
+a{
+    padding: 6px 12px;
+    font-size: 13px;
+}
+  /*-------------------------------
+  --update and submit style end 
+  ---------------------------------*/
+ 
+
+  /*----------------------------------
+  ------ footer style start-----------
+  ----------------------------------- */
+  .logo img{
+    width: 300px;
+    height: 70px;
+}
+  /*----------------------------------
+  ------ footer style end-----------
+  ----------------------------------- */
+ }
+ /*---------------------------
+ --responsive for android end 
+ --------------------------------*/
