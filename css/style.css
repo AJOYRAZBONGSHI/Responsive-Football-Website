@@ -30,6 +30,19 @@ body{
     font-size: 64px;
     color: #FFFFFF;
 }
+.left-side h1 .chnage-content:after{
+	content: '';
+	animation: changetext 7s infinite linear;
+
+}
+
+@keyframes changetext{
+    0%{content: "America 2013";color: white;}
+	25%{content: "America 2016";color: #E02C;}
+	50%{content: "America 2019";color: white}
+	75%{content: "America 2021";color: #E02C;}
+	100%{content: "America 2024";color: #3DBAFD;}
+}
 .left-side a{
     text-decoration: none;
     padding: 10px 24px;
@@ -57,3 +70,24 @@ body{
 /* ---------------------------
 ---header style end------
 --------------------------------- */
+
+ /* ----------------------------
+ blogs section style start
+ --------------------------- */
+ .blogs{
+     
+ }
+ .blog{
+    width: 330px;
+    height: 474px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+ }
+ .blog img{
+    width: 300px;
+    height: 256px;
+ }
+ /* ----------------------------
+ blogs section style end
+ --------------------------- */
