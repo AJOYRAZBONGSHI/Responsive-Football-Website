@@ -64,7 +64,7 @@ body{
     height: 438px;
 }
 .banner:hover {
-    transform: scale(0.8) rotate(-360deg);
+    transform: scale(0.8);
     transition: transform 2s ease;
 }
 /* ---------------------------
@@ -367,7 +367,7 @@ a:hover{
 .right-blog img{
     width: 328px;
     height: 248px;
-    margin: 20px 0 0 0;
+    margin: 70px 0 0 0;
 }
  /* ---------------------------
  ------match-blog style end 
@@ -380,7 +380,7 @@ a:hover{
 .history-header{
     font-weight: 700;
     font-size: 30px;
-    margin: 5px 0 20px 0;
+    /* margin: 5px 0 20px 0; */
 }
 .historys{
     flex-direction: column;
