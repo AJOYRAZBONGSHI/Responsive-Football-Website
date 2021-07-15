@@ -186,14 +186,14 @@ cofa america history style start
     display: flex;
     flex-direction: row;
 }
+.best-team{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-row-gap: 30px;
+}
 .history{
     margin: 0 15px;
 }
-/* #container1{
-    margin: 50px 192px 0 192px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding: 50px;
-} */
 /* ------------------------------
 cofa america history style end 
 -----------------------------------*/
@@ -355,11 +355,9 @@ a:hover{
      
  }
  .left-blog{
-    margin-top: 60px;
-    margin-left: 15px;
     text-align: left;
-    margin-top: 0;
     height: 120px;
+    margin: 0 0 120px 15px;
 }
 .left-blog h1{
     font-weight: 700;
@@ -369,7 +367,7 @@ a:hover{
 .right-blog img{
     width: 328px;
     height: 248px;
-    margin: 0;
+    margin: 20px 0 0 0;
 }
  /* ---------------------------
  ------match-blog style end 
@@ -387,10 +385,16 @@ a:hover{
 .historys{
     flex-direction: column;
 }
+.best-team{
+    grid-template-columns:repeat(1,1fr);
+    grid-row-gap: 0px;
+}
 .history{
     margin: 0 15px;
     margin-bottom: 30px;
-
+}
+#container3{
+    margin-top: 90px;
 }
 
  /*------------------------------
@@ -532,6 +536,11 @@ a{
 .historys{
     flex-direction: column;
     row-gap: 30px;
+}
+.best-team{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-row-gap: 30px;
 }
 
  /*------------------------------
